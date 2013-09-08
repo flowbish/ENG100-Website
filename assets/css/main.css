@@ -26,6 +26,7 @@ body {
 	position:fixed;
 	float: left;
 	text-align: center;
+    z-index: 0;
 }
 
 .info-main-panel {
@@ -60,12 +61,20 @@ body {
 	border-top-right-radius: 10px;
 }
 
+#fakie {z-index: -1000;}
+#about { z-index: 10;}
+#projects { z-index: 5;}
+#contact { z-index: 0;}
+
 #about .info-main-panel{
 	background-color: #F7E3C6;
 }
 
 #projects .info-main-panel{
 	background-color: #B39F83;
+    /* HEY YOU */
+    text-align: center;
+    overflow: none;
 }
 
 #contact .info-main-panel{
@@ -91,4 +100,35 @@ body {
 	background-color: #576674;
 	top: 30px;
 	left: 30px;
+}
+
+/* NEW SHIT HERE*/
+
+.project-box {
+    float: left;
+    width: 300px;
+    height: 250px;
+    font-family: Arial;
+    font-size: 14;
+    font-weight: 800;
+}
+
+.bg1 {
+    background-image:url('../img/bg.png');
+    background-repeat:repeat-x repeat-y;
+}
+
+.bg2 {
+    background-image:url('../img/bg2.png');
+    background-repeat:repeat-x repeat-y;
+}
+
+.title {
+    padding-top: 15px;
+}
+
+.project-box img {
+    width: 270px;
+    position: relative;
+    top: 30px;
 }
